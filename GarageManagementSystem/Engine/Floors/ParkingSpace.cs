@@ -6,18 +6,17 @@ namespace Engine
     {
         private int Width;
         private int Height;
-        private bool Occupied;
         private List<Vehicle> vehicle;
 
-        public ParkingSpace(int widthInMetres, int heightInMetres, bool occupied)
+        public ParkingSpace(int widthInMetres, int heightInMetres, IEnumerable<Vehicle> vehicles)
         {
             Width = widthInMetres;
             Height = heightInMetres;
-            Occupied = occupied;
+            vehicle = new List<Vehicle>(vehicle);
         }
         public IEnumerable<Vehicle> IsOccupiedBy()
         {
-            if (Occupied == true)
+            if (vehicle!=null)
             {
                 return vehicle;
             }
