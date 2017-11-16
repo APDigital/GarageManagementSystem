@@ -2,7 +2,7 @@
 using Engine.OccupiedBy;
 namespace Engine
 {
-    class ParkingSpace
+    public  class ParkingSpace
     {
         private int Width;
         private int Height;

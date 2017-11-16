@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Engine.Floors
 {
-     public class Floor 
+    public class Floor 
     {
         private List<ParkingSpace> Spaces;
-        protected Floor(List<ParkingSpace> spaces)
+        public Floor(List<ParkingSpace> spaces)
         {
             Spaces = spaces;
         }
